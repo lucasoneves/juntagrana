@@ -1,15 +1,20 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
+// https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-  devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
-  modules: ['@nuxtjs/tailwindcss'],
-  tailwindcss: {
-    cssPath: '~/assets/css/tailwind.css',
-    configPath: 'tailwind.config',
-    exposeConfig: false,
-    exposeLevel: 2,
-    config: {},
-    injectPosition: 'first',
-    viewer: true,
-  }
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
+  },
+  app: {
+    head: {
+      link: [
+        {
+          rel: "stylesheet",
+          href: "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap",
+        },
+      ],
+    },
+  },
 })

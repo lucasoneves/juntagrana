@@ -1,5 +1,3 @@
 <template>
-  <div>
-    Contact
-  </div>
+  <BannerSection title="Contato" />
 </template>

@@ -6,3 +6,11 @@
   padding: 0;
   margin: 0;
 }
+
+:root {
+  --speech-blue: #3c40c6;
+  --dark-periwinkle: #575fcf;
+  --elusive: #d2dae2;
+  --green-teal: #05c46b;
+  --pearl: #1e272e;
+}

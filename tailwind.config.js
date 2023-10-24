@@ -10,7 +10,18 @@ module.exports = {
     "./node_modules/tw-elements/dist/js/**/*.js"
   ],
   theme: {
-    extend: {},
+    colors: {
+      transparent: 'transparent',
+      black: '#000',
+      white: '#fff',
+      gray: {
+        100: '#f7fafc',
+        // ...
+        900: '#1a202c',
+      },
+
+      // ...
+    }
   },
   darkMode: "class",
   plugins: [require("tw-elements/dist/plugin.cjs")]

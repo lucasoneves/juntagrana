@@ -11,7 +11,7 @@
           <NuxtLink to="/">
             Meus Desafios
           </NuxtLink>
-          <NuxtLink to="/new-challenge">
+          <NuxtLink to="/challenges/new">
             Criar desafio
           </NuxtLink>
         </ul>
@@ -24,7 +24,7 @@
 </template>
 
 <script setup lang="ts">
-
+  
 </script>
 
 <style lang="scss" scoped></style>
